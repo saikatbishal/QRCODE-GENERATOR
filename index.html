@@ -33,7 +33,8 @@
                     <input 
                     type="url"
                     id="url"
-                    class="w-full border-2 border-gray-200 rounded p-3 text-gray-dark mr-2 focus:outline-none mb-5" placeholder="Enter a URL">
+                    class="w-full border-2 border-gray-200 rounded p-3 text-gray-dark mr-2 focus:outline-none mb-5" 
+                    placeholder="Enter a URL">
                     <select id="size"
                     class="w-full border-2 border-gray-200 rounded p-3 text-gray-dark mr-2 focus:outline-none mb-5">
                         <option value="100">100x100</option>
@@ -45,15 +46,20 @@
                         <option value="700">700x700</option>
                         <option value="800">800x800</option>
                     </select>
-                    <button class="bg-gray-600 orounded w-full text-white py-3 px-4 mt-5 hover:bg-bleck" type="submit" id = "submit">Generate QR Code</button>
+                    <button class="bg-gray-600 orounded w-full text-white py-3 px-4 mt-5 hover:bg-bleck" 
+                    type="submit" 
+                    id = "submit">
+                        Generate QR Code
+                    </button>
                 </form>
             </div>
             <div class="w-full md:w-1/3 mr-24 self-center">
-                <img src="./qr-code.svg" alt="icon" class="w-1/3 m-auto mb-10 md:w-full"/>
+                <img src="./qr-code.svg" alt="icon" class="w-1/3 m-auto mb-10 md:w-full"/> <!-- ICON -->
             </div>
         </div>
         <!-- Generated QR Code -->
-        <div class="max-w-5xl m-auto flex flex-col text-center align-center justify-center mt-20">
+        <div id="generated"
+        class="max-w-5xl m-auto flex flex-col text-center align-center justify-center mt-20">
             <!-- Spinner -->
             <div id="spinner" role="status">
                 <svg
